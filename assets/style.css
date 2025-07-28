@@ -6,7 +6,7 @@ body {
 	font-family: 'Inter';
 	font-style: normal;
 }
-.top-header {
+header {
 	background-color: white;
 	position: sticky;
 	top:0;
@@ -18,7 +18,11 @@ body {
 	align-items: center;
 }
 
-.top-header .name {
+h2 {
+	font-size: 1.75rem;
+}
+
+header .name {
 	font-size: 26px;
 }
 
@@ -84,8 +88,10 @@ body {
 	font-weight: 800;
 	font-style: italic;
 	width: 60%;
+	line-height: 1.2;
+	margin-bottom: 0.5rem;
 }
-#about-me p {
+.about-me__text {
 	width: 80%;
 	font-size: 14px;
 }
@@ -147,6 +153,8 @@ body {
 	font-family: Spectral;
 	font-style: italic;
 	font-weight: 300;
+	line-height: 1.2;
+	font-size: 2.5rem;
 
 }
 .quote__author {
@@ -154,11 +162,15 @@ body {
 	font-weight: 800;
 	font-size: 22px;
 }
+.quote-ext {
+	margin-bottom: 1rem;
+}
 
 #services {
 	margin: auto;
 	background-color: #A8D5D8 ;
 	position: relative;
+	margin-top: 1em;
 }
 #services .container::before{
 	content: ' ';
@@ -188,6 +200,12 @@ body {
 	flex-direction: column;
 	justify-content: space-between;
 	z-index: 1;
+}
+
+.price {
+	font-size: 1.5rem;
+	margin-bottom: 0.5rem;
+	line-height: 1.2;
 }
 
 #contact {
@@ -255,7 +273,7 @@ input[type="submit"] {
 		margin-top: 0;
 		margin-bottom: 1em;
 	}
-	#about-me h6, #about-me p {
+	#about-me p, #about-me p {
 		width: 100%;
 	}
 }
@@ -320,15 +338,15 @@ input[type="submit"] {
 }
 
 @media all and (max-width: 650px) {
-	.top-header {
+	header {
 		flex-direction: column;
 		padding-inline: 0;
 	}
-	.top-header .nav, .top-header .nav ul {
+	header .nav, header .nav ul {
 		width: 100%;
 		padding: 0 0 0 0;
 	}
-	.top-header .nav li {
+	header .nav li {
 		flex: 1;
 		padding-block: 1em;
 		text-align: center;
